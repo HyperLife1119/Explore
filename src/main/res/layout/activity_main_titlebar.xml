@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="7dp"
+    android:background="@drawable/background_titlebar"
+    android:fitsSystemWindows="true"
+    android:elevation="0.5dp">
+    
+    <ImageButton
+        android:id="@+id/icon"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        android:padding="7dp"
+        android:background="@drawable/background_imagebutton_icon"
+        android:src="@drawable/round"
+        android:scaleType="fitCenter" />
+    
+    <Button
+        android:id="@+id/go"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="7dp"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:text="Go!"
+        android:textSize="15sp"
+        android:textColor="@color/white_1"
+        android:textAllCaps="false"
+        android:background="@drawable/background_button" />
+        
+    
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/go"
+        android:layout_centerInParent="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:background="@drawable/background_edittext"
+        android:hint="输入网站地址"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/green_alpha"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionGo"
+        android:selectAllOnFocus="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusUp="@id/et"
+        android:nextFocusLeft="@id/et" />
+        
+    <Button
+        android:id="@+id/del"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@+id/go"
+        android:text="×"
+        android:textSize="20sp"
+        android:textColor="@color/white_1"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        android:background="@drawable/background_button_del"
+        style="?android:attr/borderlessButtonStyle" />
+        
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/et"
+        android:progressDrawable="@drawable/background_progressbar"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal" />
+        
+</RelativeLayout>

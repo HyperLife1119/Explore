@@ -1,0 +1,20 @@
+<resources>
+    <color name="alpha">#00FFFFFF</color>
+
+    <color name="white_1">#FAFAFA</color>
+    <color name="white_2">#F5F5F5</color>
+    <color name="white_3">#EEEEEE</color>
+    
+    <color name="gray_1">#E0E0E0</color>
+    <color name="gray_2">#BDBDBD</color>
+    
+    <color name="black">#212121</color>
+    
+    <color name="green_alpha">#50009688</color>
+    <color name="green_1">#009688</color>
+    <color name="green_2">#00897B</color>
+    
+    <color name="yellow_alpha">#50FFB300</color>
+    <color name="yellow_1">#FFB300</color>
+    <color name="yellow_2">#FFA000</color>
+</resources>
